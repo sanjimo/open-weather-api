@@ -31,11 +31,11 @@ const displaySearchWeather = city => {
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
-                 <div class="card-body shadow p-4 mb-5 mt-5 bg-body rounded">
+                 <div class="card-body shadow p-4 mb-5 mt-5 bg-body rounded w-75 mx-auto">
                     <h5 class="card-title text-center fw-bold fs-3">${city.name}, ${city.sys.country}</h5>
                     <h6 class="card-text text-center fw-semibold fs-2">${city.weather[0].main} (${city.weather[0].description})</h6>
                  </div>
-                 <div class="card-body shadow p-4 mb-5 mt-5 bg-body rounded">
+                 <div class="card-body shadow p-4 mb-5 mt-5 bg-body rounded w-75 mx-auto">
                     <h6 class="card-text text-center fw-semibold fs-2">Humidity : ${city.main.humidity}%</h6>
                     <h6 class="card-text text-center fw-semibold fs-2">Pressure : ${city.main.pressure} mBar</h6>
                     <h6 class="card-text text-center fw-semibold fs-2">Wind Speed : ${city.wind.speed} km/h</h6>
